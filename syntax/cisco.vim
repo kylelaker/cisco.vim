@@ -49,7 +49,6 @@ syn keyword ciscoFunction   passive-interface distribute-list permit subnet-zero
 syn match   ciscoFunction   /channel\-\(group\|protocol\)/
 
 syn match   ciscoComment    /!.*$/
-syn match   ciscoComment    /no\s.*$/
 syn match   ciscoComment    /description.*$/
 syn match   ciscoComment    /remark.*$/
 syn match   ciscoComment    /\s*#.*$/
@@ -65,7 +64,7 @@ syn match   ciscoInterface  /^vrf\s\(definition\|context\)\s.*$/
 syn match   ciscoInterface  /^address\-family\sipv.*$/
 
 
-syn keyword ciscoAction     disable deny shutdown down none
+syn keyword ciscoAction     disable deny shutdown down none no
 
 syn keyword ciscoVar        trunk access full full-duplex auto active monitor
 syn keyword ciscoVar        any enable disable
